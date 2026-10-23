@@ -4,22 +4,20 @@ public class CellPhone {
     private int serialNumber ;
     private String model;
     private String carrier;
-    private int phoneNumber;
+    private String phoneNumber;
     private  String ownerName;
 
     public CellPhone(){
 
     }
 
-    public CellPhone(int serialNumber, String model, String carrier, int phoneNumber, String ownerName) {
+    public CellPhone(int serialNumber, String model, String carrier, String phoneNumber, String ownerName) {
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier = carrier;
         this.phoneNumber = phoneNumber;
         this.ownerName = ownerName;
-
     }
-
 
     public int getSerialNumber() {
 
@@ -47,11 +45,11 @@ public class CellPhone {
         this.carrier = carrier;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
